@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3legant E-Commerce UI</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navigation_bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+        }
+
+        .navigation_bar a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 10px;
+        }
+
+        .navigation_bar .logo {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .navigation_bar .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .navigation_bar .menu a {
+            margin: 0 10px;
+        }
+
+        .main {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .main img {
+            position: relative;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .main-text {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+
+        .main h1 {
+            font-size: 6em;
+            margin: 40px;
+            text-align: left;
+        }
+
+        .main h2 {
+            font-size: 6em;
+            margin: 40px;
+            text-align: left;
+        }
+
+        .main p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .main .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .left_txt{
+            flex: 0 0 auto; /* Зафиксировать ширину */
+            margin-right: 20px; /* Добавить отступ справа */
+        }
+        .right_txt{
+            flex: 0 0 auto; /* Зафиксировать ширину */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .Products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        
+        .new-arrivals-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .new-arrivals-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .new-arrivals-image {
+            height: auto;
+        }
+
+        .more-products-image {
+            margin-left: auto;
+        }
+
+        .new-arrivals-cards-container{
+            margin-top: 48px;
+            margin-bottom: 48px;
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+
+        .valutes{
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+
+        .shipping {
+            margin-left: 32px;
+        }
+
+        .Prices {
+            margin-top: 24px;
+        }
+
+        .articles {
+            display: flex;
+            margin-top: 32px;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .articles-photos {
+            margin-top: 25px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }        
+        
+
+    </style>
+</head>
+<body>
+    <div class="navigation_bar">
+        <div class="logo">
+            <img src="images/Logo.svg">
+        </div>
+        <div class="menu">
+            <div class="button-container">
+                <img src="images/Link Group.png" alt="nav buttons">
+            </div>
+            <a href="#"><img src="images/user-circle.svg" alt="User"></a>
+            <a href="#"><img src="images/Cart Button.svg" alt="Cart"></a>
+        </div> 
+    </div>
+    <div class="main">
+        <img src="images/main_screen.png" alt="Main Image">
+        <div class="container">
+            <img src="images/Simply Better..svg" alt="Main Text" class="left_txt">
+            <img src="images/3legant is a gift & decorations store based in HCMC, Vietnam. Est since 2019..svg" alt="Not main text" class="right_txt">
+        </div>
+    </div>
+    <div class="Products">
+        <div class="LivingRoom">
+            <img src="images/Card.svg" alt="Living Room products">
+        </div>
+        <div class="Bedroom and Kitchen">
+            <img src="images/Small Cards.jpg" alt="bedroom and kitchen">
+        </div>
+    </div>
+    <div class="new-arrivals-container">
+        <div class="new-arrivals-title">
+            <img src="images/New Arrivals.svg" alt="New arrivals banner" class="new-arrivals-image">
+            <img src="images/Button.svg" alt="More products" class="more-products-image">
+        </div>
+    </div>
+    <div class="new-arrivals-cards-container">
+        <img src="images/product card.png" alt="New products cards">
+    </div>
+    <div class="valutes">
+        <img src="images/free shipping.svg" alt="Free shipping" class="shipping">
+        <img src="images/money back.svg" alt="money back" class="money">
+        <img src="images/secure.svg" alt="Secure payements" class="pay">
+        <img src="images/support.svg" alt="27/7 support" class="support">
+    </div>
+    <div class="Prices">
+        <img src="images/image prices.png" alt="prices plaseholder" class="prices-photo">
+        <img src="images/Content.svg" alt="hundrets of lower prices" class="prices-content">
+    </div>
+    <div class="articles">
+        <img src="images/Articles.svg" alt="Articles" class="Articles">
+        <img src="images/more articles.svg" alt="More articles" class="more-articles">
+    </div>
+    <div class="articles-photos">
+        <img src="images/Article1.png" alt="First article">
+        <img src="images/Article2.png" alt="second article">
+        <img src="images/Article3.png" alt="third article">
+    </div>
+    <div class="Newsletter">
+        
+    </div>
+</body>
+</html>
